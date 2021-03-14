@@ -11,3 +11,97 @@ h1{
   font-size: 3.6rem;
   font-family: $Semibold-font;
 }
+.searchContainer{
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+  & span{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    margin-top: 7px;
+    margin-left: 9px;
+    background-image: url("../../../assets/icon/search.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  & input{
+    margin: 0 auto;
+    height: 40px;
+    padding-left: 35px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 500px;
+    border: 2px solid #404C5E;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-family: $medium-font;
+    outline: none;
+  }
+}
+.productDetailsContainer{
+  min-height: 100px;
+  height: auto;
+  width: 100%;
+  background-color: #C4C4C4;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  & .columnTitle{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-family: $Semibold-font;
+  }
+  & div:last-child{
+    margin-bottom: 5px;
+  }
+}
+
+
+.optionsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-family: $medium-font;
+  & .optionsContainer-return{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & span{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url("../../../assets/icon/return.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    }
+  }
+  & .optionsContainer-addProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & span{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url("../../../assets/icon/plus.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    }
+  }
+}
+

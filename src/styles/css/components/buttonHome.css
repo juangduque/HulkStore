@@ -7,6 +7,10 @@
   src: url("../../../assets/font/Raleway/Raleway-SemiBold.ttf");
 }
 @font-face {
+  font-family: "Ralewai-Medium";
+  src: url("../../../assets/font/Raleway/Raleway-Medium.ttf");
+}
+@font-face {
   font-family: "Ralewai-Regular";
   src: url("../../../assets/font/Raleway/Raleway-Regular.ttf");
 }

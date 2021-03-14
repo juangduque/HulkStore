@@ -1,0 +1,22 @@
+@import "../lib/variables";
+
+.productCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 1px;
+  padding: 5px 0;
+  background-color:white;
+  font-size: 1.2rem;
+  font-family: $regular-font;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  &:hover{
+    background-color: $productBG-color;
+    cursor: pointer;
+  }
+}

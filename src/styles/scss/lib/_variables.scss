@@ -1,6 +1,7 @@
 // Color
 $header-color: #062C67;
 $borderIcon-buttonHome: #76EC00;
+$productBG-color: #9EB776;
 
 // Font
 @font-face{
@@ -12,12 +13,17 @@ $borderIcon-buttonHome: #76EC00;
   src: url('../../../assets/font/Raleway/Raleway-SemiBold.ttf');
 }
 @font-face{
+  font-family: "Ralewai-Medium";
+  src: url('../../../assets/font/Raleway/Raleway-Medium.ttf');
+}
+@font-face{
   font-family: "Ralewai-Regular";
   src: url('../../../assets/font/Raleway/Raleway-Regular.ttf');
 }
 
 $bold-font: "Ralewai-Bold", sans-serif;
 $Semibold-font: "Ralewai-SemiBold", sans-serif;
+$medium-font: "Ralewai-Medium", sans-serif;
 $regular-font: "Ralewai-Regular", sans-serif;
 
 
