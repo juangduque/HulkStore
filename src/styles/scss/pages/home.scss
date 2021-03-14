@@ -1,0 +1,24 @@
+@import '../lib/variables';
+@import '../lib/mixins';
+
+main{
+  @include mainStyle;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-family: $bold-font;
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-align: left;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  font-family: $regular-font;
+  font-size: 2rem;
+}

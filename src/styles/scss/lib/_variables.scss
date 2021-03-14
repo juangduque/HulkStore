@@ -1,0 +1,28 @@
+// Color
+$header-color: #062C67;
+$borderIcon-buttonHome: #76EC00;
+
+// Font
+@font-face{
+  font-family: "Ralewai-Bold";
+  src: url('../../../assets/font/Raleway/Raleway-Bold.ttf');
+}
+@font-face{
+  font-family: "Ralewai-SemiBold";
+  src: url('../../../assets/font/Raleway/Raleway-SemiBold.ttf');
+}
+@font-face{
+  font-family: "Ralewai-Regular";
+  src: url('../../../assets/font/Raleway/Raleway-Regular.ttf');
+}
+
+$bold-font: "Ralewai-Bold", sans-serif;
+$Semibold-font: "Ralewai-SemiBold", sans-serif;
+$regular-font: "Ralewai-Regular", sans-serif;
+
+
+// Size
+$min-size-main-section: 280px;
+$max-size-main-section: 800px;
+$min-size-ButtonHome: 280px;
+$max-size-ButtonHome: 800px;

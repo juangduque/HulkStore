@@ -1,0 +1,13 @@
+@import "../lib/variables";
+
+@mixin mainStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 87.5%;
+  margin: 0 auto;
+  margin-top: 20px;
+  min-width: $min-size-main-section;
+  max-width: $max-size-main-section;
+}

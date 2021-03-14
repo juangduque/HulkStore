@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Ralewai-Bold";
+  src: url("../../../assets/font/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Ralewai-SemiBold";
+  src: url("../../../assets/font/Raleway/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Ralewai-Regular";
+  src: url("../../../assets/font/Raleway/Raleway-Regular.ttf");
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 320px;
+  height: 80px;
+  background-color: #062C67;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.logoContainer img {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 100px;
+  height: 70px;
+}
+
+.lateralMenu {
+  margin-top: 25px;
+  margin-right: 20px;
+}

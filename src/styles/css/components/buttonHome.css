@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Ralewai-Bold";
+  src: url("../../../assets/font/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Ralewai-SemiBold";
+  src: url("../../../assets/font/Raleway/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Ralewai-Regular";
+  src: url("../../../assets/font/Raleway/Raleway-Regular.ttf");
+}
+.buttonHome {
+  display: flex;
+  flex-direction: row;
+  height: 95px;
+  width: 87.5%;
+  min-width: 280px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 7px;
+  background: linear-gradient(180deg, #011A0E 44.79%, #025432 100%);
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+}
+.buttonHome span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: solid 2px #76EC00;
+  border-radius: 100%;
+  margin: auto 0;
+  margin-left: 13px;
+}
+.buttonHome h2 {
+  margin: auto 0;
+  margin-left: 15px;
+  font-size: 2rem;
+  color: white;
+  font-family: "Ralewai-SemiBold", sans-serif;
+}
+.buttonHome img {
+  width: 40px;
+  height: 40px;
+}
