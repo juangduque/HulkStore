@@ -1,0 +1,118 @@
+@import '../lib/variables';
+@import '../lib/mixins';
+
+main{
+  @include mainStyle;
+  margin-bottom: 20px;
+}
+
+.viewTitle{
+  font-family: $Semibold-font;
+  font-size: 3rem;
+  margin-left: 20px;
+}
+.highligthsCardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  width: 95%;
+}
+
+.cardSection{
+  border: 2px solid $contourCardsColor;
+  border-radius: 10px;
+  width: 280px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  box-shadow: 2px 5px 13px 0px $contourCardsColor;
+  & .infoLabel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  & h2{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 3.6rem;
+    font-family: $Semibold-font;
+    text-align: center;
+    width: auto;
+  }
+  & h3{
+    margin-bottom: 3px;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 2rem;
+    font-family: $medium-font;
+    border-top: 2px solid $contourCardsColor;
+    color: $cardText-color;
+  }
+}
+
+.buttonOptionsTitle{
+  display: flex;
+  justify-content: start;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  & h2{
+    margin: 0;
+    font-size: 2rem;
+    font-family: $Semibold-font;
+    margin-left: 10px;
+  }
+}
+
+.buttonsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 95%;
+  margin: 20px auto;
+  border: 2px solid $contourCardsColor;
+  border-radius: 10px;
+  padding: 10px;
+  & button{
+    height: 60px;
+    width: 200px;
+    margin: 5px auto;
+    border: 3px solid $buttonColor;
+    border-radius: 10px;
+    color: $buttonColor;
+    font-size: 2.4rem;
+    font-family: $Semibold-font;
+    outline: none;
+    &:hover{
+      background-color: $buttonColor;
+      color: white;
+    }
+  }
+}
+
+.optionsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-family: $medium-font;
+  & .optionsContainer-return{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & span{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url("../../../assets/icon/return.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    }
+  }
+}

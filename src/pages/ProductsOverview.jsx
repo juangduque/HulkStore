@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductOverviewCard from '../components/ProductOverviewCard.jsx';
 
 // Style
@@ -31,19 +32,22 @@ class ProductsOverview extends React.Component{
           <ProductOverviewCard name="item1" reference="ref1" quantity="###"/>        
           <ProductOverviewCard name="item1" reference="ref1" quantity="###"/>        
           <ProductOverviewCard name="item1" reference="ref1" quantity="###"/>        
-          <ProductOverviewCard name="item1" reference="ref1" quantity="###"/>        
-
+          <ProductOverviewCard name="item1" reference="ref1" quantity="###"/> 
         </div>
 
         {/* Page options */}
         <div className="optionsContainer">
           <div className="optionsContainer-return">
-            <span></span>
-            <p>Regresar</p>
+            <Link to="/">
+              <span></span>
+              <p>Regresar</p>
+            </Link >
           </div>
           <div className="optionsContainer-addProduct">
-            <span></span>
-            <p>Agregar producto</p>
+            <Link to="/">
+              <span></span>
+              <p>Agregar producto</p>
+            </Link>
           </div>
         </div>
       </main>

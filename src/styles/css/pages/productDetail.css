@@ -44,62 +44,89 @@ main {
   margin-bottom: 20px;
 }
 
-h1 {
-  text-align: left;
-  font-size: 3.6rem;
+.viewTitle {
   font-family: "Ralewai-SemiBold", sans-serif;
+  font-size: 3rem;
+  margin-left: 20px;
 }
 
-.searchContainer {
-  margin: 20px auto;
-  width: 100%;
-  height: auto;
-}
-.searchContainer span {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  margin-top: 7px;
-  margin-left: 9px;
-  background-image: url("../../../assets/icon/search.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.searchContainer input {
-  margin: 0 auto;
-  height: 40px;
-  padding-left: 35px;
-  width: 100%;
-  min-width: 280px;
-  max-width: 500px;
-  border: 2px solid #404C5E;
-  border-radius: 20px;
-  font-size: 1.4rem;
-  font-family: "Ralewai-Medium", sans-serif;
-  outline: none;
+.highligthsCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  width: 95%;
 }
 
-.productDetailsContainer {
-  min-height: 100px;
-  height: auto;
-  width: 100%;
-  background-color: #C4C4C4;
-  border-radius: 5px;
-  padding-bottom: 5px;
+.cardSection {
+  border: 2px solid #062C67;
+  border-radius: 10px;
+  width: 280px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  box-shadow: 2px 5px 13px 0px #062C67;
 }
-.productDetailsContainer .columnTitle {
+.cardSection .infoLabel {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  margin: 10px 0;
-  font-size: 1.5rem;
-  font-family: "Ralewai-SemiBold", sans-serif;
+  justify-content: center;
 }
-.productDetailsContainer div:last-child {
-  margin-bottom: 5px;
+.cardSection h2 {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 3.6rem;
+  font-family: "Ralewai-SemiBold", sans-serif;
+  text-align: center;
+  width: auto;
+}
+.cardSection h3 {
+  margin-bottom: 3px;
+  padding-left: 5px;
+  padding-top: 3px;
+  font-size: 2rem;
+  font-family: "Ralewai-Medium", sans-serif;
+  border-top: 2px solid #062C67;
+  color: #1B2211;
+}
+
+.buttonOptionsTitle {
+  display: flex;
+  justify-content: start;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+}
+.buttonOptionsTitle h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Ralewai-SemiBold", sans-serif;
+  margin-left: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 95%;
+  margin: 20px auto;
+  border: 2px solid #062C67;
+  border-radius: 10px;
+  padding: 10px;
+}
+.buttonsContainer button {
+  height: 60px;
+  width: 200px;
+  margin: 5px auto;
+  border: 3px solid #85A355;
+  border-radius: 10px;
+  color: #85A355;
+  font-size: 2.4rem;
+  font-family: "Ralewai-SemiBold", sans-serif;
+  outline: none;
+}
+.buttonsContainer button:hover {
+  background-color: #85A355;
+  color: white;
 }
 
 .optionsContainer {
@@ -124,21 +151,6 @@ h1 {
   height: 40px;
   margin-bottom: 10px;
   background-image: url("../../../assets/icon/return.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.optionsContainer .optionsContainer-addProduct {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.optionsContainer .optionsContainer-addProduct span {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-  background-image: url("../../../assets/icon/plus.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
