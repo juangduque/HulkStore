@@ -9,6 +9,11 @@ class ProductsOverview extends React.Component{
     return(
       <main>
         <h1>Camisetas</h1>
+
+        {/* Search section */}
+        <div>
+          
+        </div>
       </main>
     )
   }
