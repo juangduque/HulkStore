@@ -118,6 +118,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 .optionsContainer .optionsContainer-return span {
   width: 40px;
@@ -133,6 +135,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 .optionsContainer .optionsContainer-addProduct span {
   width: 40px;

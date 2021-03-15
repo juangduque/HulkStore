@@ -1,0 +1,48 @@
+{
+  "Camisetas": [
+    { "name": "Marvel hulk unleash", "ref":"1101", "stock": 16, "unitPrice": 30000,
+      "register":[
+        {"date":"02-02-2021", "detail":"ingreso de stock", "quantity":20,  "totalPrice":600000},
+        {"date":"02-12-2021", "detail":"venta según factura N° 0121", "quantity":1,  "totalPrice":30000},
+        {"date":"02-17-2021", "detail":"venta según factura N° 0179", "quantity":1,  "totalPrice":30000},
+        {"date":"02-25-2021", "detail":"venta según factura N° 0238", "quantity":2,  "totalPrice":60000}
+      ]
+    },
+    { "name": "Marvel Captain America x", "ref":"1102", "stock": 80, "unitPrice": 45000,
+      "register":[
+        {"date":"02-02-2021", "detail":"ingreso de stock", "quantity":90,  "totalPrice":4050000},
+        {"date":"02-08-2021", "detail":"venta según factura N° 0124", "quantity":5,  "totalPrice":225000},
+        {"date":"02-12-2021", "detail":"venta según factura N° 0190", "quantity":2,  "totalPrice":90000},
+        {"date":"02-28-2021", "detail":"venta según factura N° 0280", "quantity":3,  "totalPrice":135000}
+      ]
+    },
+    { "name": "DC Comics Batman arise", "ref":"1103", "stock":15, "unitPrice": 32000,
+      "register":[
+        {"date":"02-02-2021", "detail":"ingreso de stock", "quantity":30,  "totalPrice":960000},
+        {"date":"02-13-2021", "detail":"venta según factura N° 0129", "quantity":10, "totalPrice":320000},
+        {"date":"02-19-2021", "detail":"venta según factura N° 0199", "quantity":3,  "totalPrice":96000},
+        {"date":"02-21-2021", "detail":"venta según factura N° 0215", "quantity":2,  "totalPrice":64000}
+      ]
+    },
+    { "name": "Marvel Guardians of the galaxy", "ref":"1104", "stock": 55, "unitPrice": 20000,
+      "register":[
+        {"date":"02-02-2021", "detail":"ingreso de stock", "quantity":60,  "totalPrice":1200000},
+        {"date":"02-11-2021", "detail":"venta según factura N° 0110", "quantity":1,  "totalPrice":20000},
+        {"date":"02-16-2021", "detail":"venta según factura N° 0162", "quantity":2,  "totalPrice":40000},
+        {"date":"02-24-2021", "detail":"venta según factura N° 0201", "quantity":3,  "totalPrice":60000}
+      ]
+    },
+    { "name": "DC Comics Wonder Woman", "ref":"1105", "stock": 90, "unitPrice": 40000,
+      "register":[
+        {"date":"02-01-2021", "detail":"ingreso de stock", "quantity":50,  "totalPrice":2000000},
+        {"date":"02-12-2021", "detail":"venta según factura N° 0133", "quantity":6,  "totalPrice":240000},
+        {"date":"02-18-2021", "detail":"venta según factura N° 0187", "quantity":4,  "totalPrice":160000},
+        {"date":"02-26-2021", "detail":"venta según factura N° 0249", "quantity":4,  "totalPrice":160000}
+      ]
+    }      
+  ],
+  "Vasos": [],
+  "Comics": [],
+  "Juguetes": [],
+  "Accesorios": []
+}
