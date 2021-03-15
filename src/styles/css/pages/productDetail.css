@@ -147,11 +147,17 @@ main {
   align-items: center;
 }
 .optionsContainer .optionsContainer-return span {
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 50px;
   margin-bottom: 10px;
-  background-image: url("../../../assets/icon/return.png");
+  background-image: url("../../../assets/icon/return-disabled.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.optionsContainer .optionsContainer-return p {
+  color: gray;
+}
+.optionsContainer .optionsContainer-return .noOperation {
+  color: #c4c4c4c4;
 }

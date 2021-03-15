@@ -41,8 +41,19 @@
       ]
     }      
   ],
-  "Vasos": [],
-  "Comics": [],
-  "Juguetes": [],
+  "Vasos": [
+    { "name": "Joker final fate", "ref":"1201", "stock":30, "unitPrice": 8000 },
+    { "name": "Marvel Iron man", "ref":"1202", "stock":13, "unitPrice": 8000 },
+    { "name": "Hulk final fate", "ref":"1203", "stock":0, "unitPrice": 40000 } 
+  ],
+  "Comics": [
+    { "name": "Aquaman 01", "ref":"1301", "stock":1, "unitPrice": 200000 },
+    { "name": "Captain Marvel 02", "ref":"1302", "stock":0, "unitPrice": 200000 } 
+
+  ],
+  "Juguetes": [
+    { "name": "Spiderman", "ref":"1401", "stock":4, "unitPrice": 70000 },
+    { "name": "Thanos", "ref":"1402", "stock":2, "unitPrice": 80000 } 
+  ],
   "Accesorios": []
 }

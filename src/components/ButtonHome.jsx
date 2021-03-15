@@ -10,7 +10,7 @@ const ButtonHome = (props) => (
       products: props.products,
       title: props.title
     }
-  }} >  
+  }} >
     <span><img src={ props.icon } alt=""/></span>
     <h2>{ props.title }</h2>
   </Link>

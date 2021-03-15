@@ -5,13 +5,11 @@ import '../styles/css/pages/productDetail.css'
 
 const ProductDetail = (props) => {
   const item = props.location.state.item;
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     quantity: 10,
-  //     unitPrice: 20000
-  //   }
-  // }
+  const disableStyle = {
+    color: "#c4c4c4",
+    backgroundColor: "grey",
+    border: "3px solid #c4c4c4"
+  };
 
   return(
     <main>
@@ -50,16 +48,22 @@ const ProductDetail = (props) => {
       </div>
       <div className="buttonsContainer">
         <button>Registrar ingreso</button>
-        <button>Registrar venta</button>
+        {
+          item.stock == 0 ?
+          <button style={disableStyle}>Registrar venta</button> :
+          <button >Registrar venta</button>
+        }
         <button>Ver histórico</button>
       </div>
 
       {/* Return section */}
       <div className="optionsContainer">
-        <Link className="optionsContainer-return" to={props.location.state.returnLink}>
+        {/* <Link className="optionsContainer-return" to={props.location.state.returnLink}> */}
+        <div className="optionsContainer-return">
           <span></span>
           <p>Regresar</p>
-        </Link>
+        </div>
+        {/* </Link> */}
       </div>         
     </main>
   );

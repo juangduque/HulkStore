@@ -5,8 +5,28 @@ import ProductOverviewCard from '../components/ProductOverviewCard.jsx';
 // Style
 import '../styles/css/pages/productsOverview.css';
 
+// Search by name of the product
+
+// function useSearchProducts(products) {
+//   const [query, setQuery] = React.useState('');
+//   const [filteredBadges, setFilteredBadges] = React.useState(products);
+
+//   React.useMemo(() => {
+//     const result = products.filter(product => {
+//       return `${product.name}`
+//         .toLowerCase()
+//         .includes(query.toLowerCase());
+//     });
+
+//     setFilteredBadges(result);
+//   }, [products, query]);
+
+//   return { query, setQuery, filteredBadges };
+// }
+
 const ProductsOverview = (props) =>{
   const products = props.location.state.products;
+  // const { query, setQuery, filteredProducts } = useSearchBadges(products);
   
   const arrayOfProducts = [];
   for(let item of products) {
@@ -19,6 +39,14 @@ const ProductsOverview = (props) =>{
       />        
     )
   }
+  Object.size = function(obj) {
+  var size = 0,
+    key;
+  for (key in obj) {
+    if (obj.hasOwnProperty(key)) size++;
+  }
+    return size;
+  };
 
   return(
     <main>
@@ -28,7 +56,16 @@ const ProductsOverview = (props) =>{
       {/* Search section */}
       <div className="searchContainer">
         <span></span>
-        <input type="text" placeholder="Buscar"/>
+        {/* <input type="text" placeholder="Buscar"/> */}
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Buscar"
+          // value={query}
+          // onChange={e => {
+          //   setQuery(e.target.value);
+          // }}
+        />
       </div>
 
       {/* Products table */}
@@ -38,12 +75,18 @@ const ProductsOverview = (props) =>{
           <h3>Referencia</h3>
           <h3>Cantidad</h3>
         </div>
-        { arrayOfProducts }        
+        { 
+          Object.size(products) != 0 ? arrayOfProducts :
+          <div className="withOutProductsTitle">
+            <h2 >No hay productos registrados aún</h2>
+            <span></span>
+          </div>
+        }        
       </div>
 
       {/* Page options */}
       <div className="optionsContainer">
-        <Link className="optionsContainer-return" to="/">
+        <Link className="optionsContainer-returnOverview" to="/">
           <span></span>
           <p>Regresar</p>
         </Link >
